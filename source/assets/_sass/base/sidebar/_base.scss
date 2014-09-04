@@ -1,0 +1,78 @@
+/* @extend this to force long lines of continuous text to wrap */
+.force-wrap {
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.side-shadow-border {
+  box-shadow: lighten($sidebar-bg, 5) 0 1px;
+}
+.sidebar {
+  overflow: hidden;
+  color: $sidebar-color;
+  text-shadow: lighten($sidebar-bg, 8) 0 1px;
+  padding: 1.2em 20px 20px 0;
+  a { @extend .force-wrap; }
+  section {
+    font-family: $sidebar-font;
+    font-weight: 300;
+    font-size: .8em;
+    line-height: 1.4em;
+    margin-bottom: 1.5em;
+    h1 {
+      font-family: $sidebar-heading-font;
+      font-size: 1.5em;
+      font-weight: normal;
+      margin: 1.5em 0 0;
+      padding-bottom: .2em;
+      border-bottom: 1px solid $sidebar-border;
+      @extend .side-shadow-border;
+      + p {
+        padding-top: .4em;
+      }
+    }
+  }
+
+  img {
+    max-width: 100%; height: auto;
+    @include shadow-box($border: #fff .3em solid);
+
+    &.gravatar {
+        display: block;
+        border-radius: 50%;
+        margin: 10px auto;
+        width: 100px;
+    }
+  }
+  ul {
+    margin-bottom: 0.5em;
+    margin-left: 0;
+  }
+  li {
+    list-style: none;
+    padding: .5em 0;
+    margin: 0;
+    //border-bottom: 1px solid $sidebar-border;
+    //@extend .side-shadow-border;
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  a {
+    color: inherit;
+    @include transition(color .5s);
+  }
+  &:hover a {
+    color: $sidebar-link-color;
+    &:hover { color: $sidebar-link-color-hover; }
+  }
+}
+.aside-alt-link {
+  color: $sidebar-link-color-subdued;
+  &:hover {
+    color: $sidebar-link-color-subdued-hover;
+  }
+}

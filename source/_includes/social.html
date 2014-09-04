@@ -1,0 +1,13 @@
+I am social:
+<div id="social-links">
+    {% if site.github_user %}
+        <a title="{{site.github_user}} on Github" href="http://github.com/{{ site.github_user }}/"><i class="fa fa-github-square"></i></a>
+    {% endif %}
+    {% if site.twitter_user %}
+        <a title="{{ site.twitter_user }} on Twitter" href="http://twitter.com/{{ site.twitter_user }}"><i class="fa fa-twitter-square"></i></a>
+    {% endif %}
+    {% if site.stackoverflow_user %}
+        <a title="{{ site.stackoverflow_user }} on StackOverflow" href="http://stackoverflow.com/users/{{ site.stackoverflow_user }}"><i class="fa fa-stack-overflow"></i></a>
+    {% endif %}
+  <a title="RSS feed" id="rss" href="/atom.xml"><i class="fa fa-rss-square"></i></a>
+</div>

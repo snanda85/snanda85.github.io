@@ -1,0 +1,10 @@
+- name: Technology
+  desc: |
+    The journey towards senior engineer, with an emphasis on soft 
+    skills &amp; professional growth
+  category: technology
+
+- name: Quotes
+  desc: |
+    Thoughts on building simple products that people love
+  category: quotes

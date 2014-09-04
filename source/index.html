@@ -1,0 +1,58 @@
+---
+layout: default
+title: writing on software, book writeups, projects
+---
+
+<div class="content-with-sidebar">
+    <div class="inner-container">
+        <div class="main-pane">
+            <div class="blog-index">
+                {% assign index = true %}
+                {% for post in paginator.posts %}
+                    {% assign content = post.content %}
+                    <article>
+                            <p class="subtitle">
+                                <span>
+                                    {{ post.date | date: "%B %d, %Y" }}
+                                </span>
+                            </p>
+                        {% if post.categories contains "quotes" %}
+                            <h1 class="title">
+                                <a href="{{ post.url }}" title="{{post.title}}">{{ post.title | truncatewords: 5 }}</a>
+                            </h1>
+                            {% include quote.html %}
+                        {% else %}
+                            <h1 class="title">
+                                <a href="{{ post.url }}">{{ post.title }}</a>
+                            </h1>
+                            {% if post.subtitle %}
+                                <p class="subtitle">
+                                    <span>{{ post.subtitle }}</span>
+                                </p>
+                            {% endif %}
+                            <div class="post">
+                                {{ post.excerpt }}
+                                {% if post.content contains site.excerpt_separator %}
+                                    <a href="{{ post.url }}" class="">Continue Reading &rarr;</a>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    </article>
+                {% endfor %}
+
+                <div class="pagination">
+                {% if paginator.next_page %}
+                  <a class="prev" href="{{paginator.next_page_path}}">&larr; Previous</a>
+                {% endif %}
+                <a href="/blog/archives">Blog Archives</a>
+                {% if paginator.previous_page %}
+                <a class="next" href="{{paginator.previous_page_path}}">Next &rarr;</a>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            {% include asides.html %}
+        </div>
+    </div>
+</div>
