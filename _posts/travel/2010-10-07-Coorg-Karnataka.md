@@ -39,7 +39,7 @@ This time, surprisingly, the plan was to 'not' hurry :). So, 7:30 was the time w
 
 From nice road, we landed onto mysore road and in another half n hour we stopped to have breakfast. Had dosas and idlies and rice :). A heavy breakfast is always a good start for the day, right.
 
-From hereon, my buddy shifted to the driving seat till the turn to Coorg, at Srirangapatna. [My 'devilish' plan was to let her drive on mysore road, so that I can take on the curvy roads afterwards :)]
+From here on, my buddy shifted to the driving seat till the turn to Coorg, at Srirangapatna. [My 'devilish' plan was to let her drive on mysore road, so that I can take on the curvy roads afterwards :)]
 
 In 2hrs or so, and 110 kms, we were at Srirangapatna, where we missed the right turn for coorg [though there were huge hoardings telling the direction there] and had to take a u-turn. Not much a pain, it happens with me 9/10 times :)
 
@@ -47,9 +47,9 @@ In 2hrs or so, and 110 kms, we were at Srirangapatna, where we missed the right 
     <img alt="Scenery" src="{{ site.static_url }}images/posts/coorg-3-sm.jpg"/>
     Scenery
 </div>
-On this turn, we stopped for a while, had nariyal pani, and chatted a bit, to each other and to the nariyal pani guy :).
+On this turn, we stopped for a while, had nariyal pani, and chatted a bit, with each other and with the nariyal pani guy :).
 
-The route from here was -&gt;Hunsur -&gt; Gonikopal -&gt; Ponampet -&gt; Kadamakoli
+The route from here was -> Hunsur -> Gonikopal -> Ponampet -> Kadamakoli
 
 Road condition was good and the drive was pretty smooth till Gonikopal.
 

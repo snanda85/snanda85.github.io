@@ -77,15 +77,15 @@ header {
   padding-top: 10px;
 
   @include media(min-width 680px max-width 760px) {
-    width: 600px;
+    //width: 680px;
   }
 
   @include media(min-width 500px max-width 680px) {
-    width: 520px;
+    //width: 520px;
   }
 
   @include media(max-width 500px) {
-    width: 300px;
+    //width: 300px;
   }
 
 }
@@ -111,10 +111,19 @@ header {
         border-right: 1px solid $sidebar-border;
         @include span-columns(9);
         min-height: 750px;
+        // Hide sidebar in smaller screens
+        @include media($small-screen) {
+            @include span-columns(12);
+        }
     }
     .sidebar {
         @include span-columns(3);
         margin-right: -100%;
+
+        // Hide sidebar in smaller screens
+        @include media($small-screen) {
+            display: none;
+        }
     }
 }
 
