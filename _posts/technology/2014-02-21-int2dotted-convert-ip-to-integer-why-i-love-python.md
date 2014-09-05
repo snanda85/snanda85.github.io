@@ -42,5 +42,6 @@ This is the exact reverse of the above code. `struct.pack` encodes the integer t
 
 A couple of similar lines were added for IPv6 handing, and Voilà..We have a cross platform tool to convert ip address notations.
 
-The source code of this tool is hosted on [github](https://github.com/snanda85/int2dotted). Take a look, Fork it and feel free to suggest any enhancements or gotchas.
+The source code of this tool is hosted on [github][]. Take a look, Fork it and feel free to suggest any enhancements or gotchas.
 
+[github]:   http://github.com/snanda85/int2dotted   "Github Repo"

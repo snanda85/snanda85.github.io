@@ -129,6 +129,10 @@ header {
         border-bottom: none;
         padding-bottom: 1em;
     }
+
+    .category {
+        float: right;
+    }
 }
 
 article {
@@ -311,8 +315,11 @@ footer {
 
 .post {
   img {
-    margin: 0 auto;
     display: block;
+    margin: 10px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
   }
 }
 

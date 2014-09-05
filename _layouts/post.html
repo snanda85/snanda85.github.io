@@ -19,7 +19,7 @@ layout: default
                 {% endif %}
                 <p class="subtitle">
                     <span>
-                    {% if page.categories %}
+                    {% if page.categories and page.categories.size > 0%}
                             Series:
                             {% for category in page.categories %}
                                 <a href="/">{{ category | capitalize }}</a>
@@ -38,7 +38,7 @@ layout: default
                     <div class="post">{{ content }}</div>
                 {% endif %}
 
-                {% if page.tags %}
+                {% if page.tags and page.tags.size > 0 %}
                 <p class="subtitle">
                     <span>
                         Tags:

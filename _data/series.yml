@@ -1,10 +1,14 @@
 - name: Technology
   desc: |
-    The journey towards senior engineer, with an emphasis on soft 
-    skills &amp; professional growth
+    The journey towards senior engineer
   category: technology
 
 - name: Quotes
   desc: |
-    Thoughts on building simple products that people love
+    Random thoughts that pop in my mind (or in google)
   category: quotes
+
+- name: Travel
+  desc: |
+    My travelogues or general thoughts about places
+  category: travel

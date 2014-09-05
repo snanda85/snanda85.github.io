@@ -10,7 +10,7 @@ I do a little bit of everything, but I'm happiest working with Python and/or Dja
 
 ---
 
-I'm a fan of Game of Thrones, and would love Tyrion Lannister to sit on the Iron throne
+I'm a fan of Game of Thrones, and hope that Tyrion Lannister gets to sit on the Iron throne
 
 ---
 

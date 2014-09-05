@@ -15,6 +15,14 @@ title: writing on software, book writeups, projects
                                 <span>
                                     {{ post.date | date: "%B %d, %Y" }}
                                 </span>
+                            {% if post.categories and post.categories.size > 0 %}
+                                <span class="category">
+                                    Series:
+                                    {% for category in post.categories %}
+                                        <a href="/">{{ category | capitalize }}</a>
+                                    {% endfor %}
+                                </span>
+                            {% endif %}
                             </p>
                         {% if post.categories contains "quotes" %}
                             <h1 class="title">

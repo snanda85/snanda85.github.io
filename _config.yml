@@ -9,6 +9,34 @@ domain: http://sandeepnanda.com
 sass:
     sass_dir: assets/_sass
 
+# Front matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "post" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      comments: true
+  -
+    scope:
+      path: "technology"
+      type: "post" # previously `post` in Jekyll 2.2.
+    values:
+      categories: "technology"
+  -
+    scope:
+      path: "quotes"
+      type: "post" # previously `post` in Jekyll 2.2.
+    values:
+      categories: "quotes"
+  -
+    scope:
+      path: "travel"
+      type: "post" # previously `post` in Jekyll 2.2.
+    values:
+      categories: "travel"
+
 lsi: false
 highlighter: pygments
 paginate: 10
@@ -20,7 +48,7 @@ permalink: /blog/:title/
 exclude: ["CNAME", "README.md", "Rakefile", "generate.rb", "Gemfile", "Gemfile.lock"]
 gems:
   - jekyll-sitemap
-excerpt_separator: "<!--more-->"
+excerpt_separator: '<!--more-->'
 recent_posts: 8
 
 # Github repositories

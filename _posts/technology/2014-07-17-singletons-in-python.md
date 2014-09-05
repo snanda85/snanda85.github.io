@@ -3,8 +3,6 @@ layout: post
 title: Singletons in Python
 subtitle: My experience with implementing singleton pattern in python
 date: '2014-07-17T00:27:59+05:30'
-category: technology
-comments: true
 tags:
 - python
 - singleton

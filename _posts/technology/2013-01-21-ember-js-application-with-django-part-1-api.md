@@ -10,9 +10,10 @@ tumblr_url: http://sandeep-n.tumblr.com/post/22917999992/ember-js-application-wi
 I’ve been reading about Ember.js from the past few days, and got quite fascinated by it. The Emberjs documentation itself is good enough to set you on the right track.
 
 So, today I decided to write a piece of code with it using Django as the backend. The application that we’ll be writing is a simple contact manager.
-<!--more-->
+
 Assumption: You are familiar with django but a newbie to ember.js, so I'll skip the basic steps of configuring a django app.
 
+<!--more-->
 ##Creating the bare-bone backend
 
 We’ll start by creating a RESTful API in django which will act as a backend for CRUD operations performed from ember. I’ll use django-tastypie for exposing the API.
