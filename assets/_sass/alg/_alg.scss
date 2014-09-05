@@ -316,10 +316,16 @@ footer {
 .post {
   img {
     display: block;
+  }
+  .image {
+    display: inline-block;
+    text-align: center;
+    font-size: 0.8em;
     margin: 10px;
     padding: 3px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
   }
 }
 

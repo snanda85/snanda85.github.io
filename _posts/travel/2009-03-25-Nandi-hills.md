@@ -7,7 +7,9 @@ tags:
 - Road Trip
 - Motorcycle
 ---
-<img style="float: left" alt="On the way" src="{{site.static_url}}images/posts/Nandi-Hills-1.jpg"/>
+<div class="image right">
+    <img alt="On the way" src="{{site.static_url}}images/posts/Nandi-Hills-1.jpg"/>
+</div>
 2009, March 20th:  
 It was around 7pm friday when Samy and I were riding back home from office, while discussing our plans for the long weekend of the coming week.  
 
@@ -27,7 +29,9 @@ Everything went smooth till Rajbhawan road, where we took a wrong turn and lost 
 
 Finally, we landed on the highway towards BIAL Airport. A perfectly smooth road to drive on, but a little bit frustrating experience for me. I was driving at 80km/hr but I had to stick to the 60kmph lane. 'coz 80km lane was occupied by cabs driving at 120kmph.[Max. speed limit on this road is 80km/hr :)]. Not to mention, Ashish was also testing his Pulsar's speed limits here :).
 
-<img style="float: right" alt="Friends" src="{{site.static_url}}images/posts/Nandi-Hills-2.jpg"/>
+<div class="image right">
+    <img alt="Friends" src="{{site.static_url}}images/posts/Nandi-Hills-2.jpg"/>
+</div>
 We crossed the airport flyover in around 25 more mins, and now we had to go till Devanahalli and take a left turn toward Nandi hills.
 
 *Beware of the speed breakers on this highway to Devanahalli.
@@ -49,7 +53,9 @@ Got the tickets and started moving for the peak. Not very eventful climb except 
 
 Now the drinks started showing their colors. On our way back, there was not even a single wall or bush left where we've not PEEed ;). Average time between two consecutive trips was not more than 3.5 mins :).
 
-<img style="float: right" alt="Atop the hill" src="{{site.static_url}}images/posts/Nandi-Hills-3.jpg"/>
+<div class="image right">
+    <img alt="Atop the hill" src="{{site.static_url}}images/posts/Nandi-Hills-3.jpg"/>
+</div>
 
 We had a cuppa' tea and nariyal-pani at the top and started the journey back after staying for an hour or two. Samy was overflowing with excitement and came back jumping all over around [Did I mention that he had a fracture in his knee? :)]
 
