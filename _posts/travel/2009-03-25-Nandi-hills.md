@@ -1,5 +1,5 @@
 ---
-title: Nandi Hills (Bangalore)
+title: Nandi Hills (Bangalore, Karnataka)
 subtitle: A trip out of the blues on a lazy friday night
 tags:
 - Nandi Hills

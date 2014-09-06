@@ -8,13 +8,11 @@ tags:
 - Kadamakoli
 - Kushalnagar
 ---
-[10-Sept-2010]
-
-###Pre-Ride:
-
 <div class="right image">
     <img alt="" src="{{ site.static_url }}images/posts/coorg-1-sm.jpg"/>
 </div>
+###Pre-Ride:
+
 One fine evening, with cups of tea in our hands we were talking about our last ride together. It'd been a one full year since we went together on a ride. Both of us were procrastinating it since then, for one or the other reason.
 
 It was the same week last year when we first went out together:), so this was a good time to quench our thirst for a drive and re-live those memories.
@@ -26,7 +24,7 @@ She said yes, and we got into the preparation. This time I had a some money with
 So, all prepared, we started waiting for the friday.
 
 <!--more-->
-###Day1:
+###Day 1 (10-Sept-2010):
 
 <div class="right image">
     <img alt="Had breakfast @ mysore road" src="{{ site.static_url }}images/posts/coorg-2-sm.jpg"/>
@@ -68,7 +66,7 @@ And the next moment I was standing in front of the cottages, crossing that part 
 
 We met the owners and their granny on reaching. And as I have already told about this very cool knack of my pillion, it didn't take much time for us to feel at home. The owners were very nice people. We had dinner and dozed off by 10pm. I was ON for a glass of wine, but i could clearly see that redness of anger in my pillion's eyes;), so just left the idea.
 
-###Day2:
+###Day 2:
 
 This was the day which I call the 'Complete Aish' Day.
 
@@ -101,7 +99,7 @@ We were back in our base by 6pm, and somehow I was feeling hungry again. The own
 
 Had dinner then and went off to sleep by 10pm, hoping to start early the next day, as we hadn't done any sight seeing yet.
 
-###Day3:
+###Day 3:
 
 Huh, the plans of an early start usually go in vain. This time was no exception :).
 

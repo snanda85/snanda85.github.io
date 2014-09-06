@@ -1,0 +1,36 @@
+<article>
+    <p class="subtitle">
+        <span>
+            {{ post.date | date: "%B %d, %Y" }}
+        </span>
+    {% if post.categories and post.categories.size > 0 %}
+        <span class="category">
+            Series:
+            {% for category in post.categories %}
+                {% include post/category_link.html %}
+            {% endfor %}
+        </span>
+    {% endif %}
+    </p>
+    {% if post.categories contains "quotes" %}
+        <h1 class="title">
+            <a href="{{ post.url }}" title="{{post.title}}">{{ post.title | truncatewords: 5 }}</a>
+        </h1>
+        {% include quote.html %}
+    {% else %}
+        <h1 class="title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </h1>
+        {% if post.subtitle %}
+            <p class="subtitle">
+                <span>{{ post.subtitle }}</span>
+            </p>
+        {% endif %}
+        <div class="post">
+            {{ post.excerpt }}
+            {% if post.content contains site.excerpt_separator %}
+                <a href="{{ post.url }}" class="">Continue Reading &rarr;</a>
+            {% endif %}
+        </div>
+    {% endif %}
+</article>

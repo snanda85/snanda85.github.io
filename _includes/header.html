@@ -4,7 +4,19 @@
   </a>
   <nav>
     <ul>
-      <li><a href="/">Blog</a></li>
+      <li><a href="/">Home</a></li>
+      <li>
+        {% assign category = "technology" %}
+        {% include post/category_link.html %}
+      </li>
+      <li>
+        {% assign category = "travel" %}
+        {% include post/category_link.html %}
+      </li>
+      <li>
+        {% assign category = "quotes" %}
+        {% include post/category_link.html %}
+      </li>
       <li><a href="/about">About</a></li>
       <li class="no-bullet"><a href="/atom.xml">RSS</a></li>
     </ul>

@@ -433,3 +433,26 @@ footer {
         text-decoration: none;
     }
 }
+
+.pagetitle {
+    color: $accent-color;
+    margin: 0.5em;
+    text-align: center;
+
+    h1 {
+        font-family: $sans-serif-article-2;
+        font-size: 1.4em;
+
+        @include media($medium-screen) {
+            font-size: 1.9em;
+        }
+    }
+
+    p.subtitle {
+        color: transparentize($base-font-color, .6);
+        font-family: $sans-serif-article-2;
+        font-size: .8em;
+        margin-bottom: .5em;
+        margin-top: .3em;
+    }
+}

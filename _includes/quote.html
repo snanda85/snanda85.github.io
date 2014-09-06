@@ -1,10 +1,8 @@
-{% unless content %}
-    {% if post.content %}
-        {% assign content = post.content %}
-    {% elsif page.content %}
-        {% assign content = page.content %}
-    {% endif %}
-{% endunless %}
+{% if post.content %}
+    {% assign content = post.content %}
+{% elsif page.content %}
+    {% assign content = page.content %}
+{% endif %}
 
 {% if post.author %}
     {% assign author = post.author %}
