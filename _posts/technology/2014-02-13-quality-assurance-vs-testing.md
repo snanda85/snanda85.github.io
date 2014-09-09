@@ -5,7 +5,7 @@ date: '2014-02-13T00:09:00+05:30'
 category: technology
 comments: true
 tags:
-- qa
+- quality assurance
 - testing
 - software
 tumblr_url: http://sandeep-n.tumblr.com/post/76442775352/quality-assurance-vs-testing
