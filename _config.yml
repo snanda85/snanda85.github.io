@@ -18,6 +18,7 @@ defaults:
     values:
       layout: "post"
       comments: true
+      sharing: true
   -
     scope:
       path: "technology"
@@ -90,3 +91,4 @@ google_analytics_tracking_id: UA-54329779-1
 facebook_like: true
 
 #stackoverflow_user: 956362
+infolinks_pid: 2189848
