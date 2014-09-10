@@ -35,16 +35,19 @@ layout: page_with_sidebar
         <div class="post">{{ content }}</div>
     {% endif %}
 
-    {% if page.tags and page.tags.size > 0 %}
+
     <p class="subtitle">
-        <span>
+        {% if page.tags and page.tags.size > 0 %}
+        <span class="tags">
             Tags:
             {% for tag in page.tags %}
                 <a href="/">{{ tag | capitalize }}</a>
             {% endfor %}
         </span>
+        {% endif %}
+        {% include post/social_share.html %}
+        <br style="clear:both"/>
     </p>
-    {% endif %}
 
     {% if page.previous.url or page.next.url %}
         <p class="subtitle">

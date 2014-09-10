@@ -37,6 +37,7 @@ defaults:
     values:
       categories: "travel"
 
+enable_sharing: true
 lsi: false
 highlighter: pygments
 paginate: 10

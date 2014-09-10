@@ -1,0 +1,25 @@
+{% if site.enable_sharing %}
+    <span class="social-share">
+        Share:
+
+        <a target="_blank" title="LinkedIn" href="//www.linkedin.com/shareArticle?url={{ site.domain }}{{ page.url }}&title={{ page.title }}&summary={{ page.content | truncatewords: 100 }}">
+            <i class="fa fa-linkedin-square fa-2x"></i>
+        </a>
+
+        <a target="_blank" title="Twitter" href="//twitter.com/intent/tweet?url={{ site.domain }}{{ page.url }}&text={{ page.title }} @{{site.twitter_user}}">
+            <i class="fa fa-twitter-square fa-2x"></i>
+        </a>
+
+        <a target="_blank" title="Google Plus" href="//plus.google.com/share?url={{ site.domain }}{{ page.url }}">
+            <i class="fa fa-google-plus-square fa-2x"></i>
+        </a>
+
+        <a target="_blank" title="Reddit" href="//www.reddit.com/submit?url={{ site.domain }}{{ page.url }}&title={{ page.title }}">
+            <i class="fa fa-reddit-square fa-2x"></i>
+        </a>
+
+        <a target="_blank" title="Digg" href="//digg.com/submit?url={{ site.domain }}{{ page.url }}">
+            <i class="fa fa-digg fa-2x"></i>
+        </a>
+    </span> 
+{% endif %}
