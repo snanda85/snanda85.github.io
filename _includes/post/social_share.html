@@ -2,11 +2,11 @@
     <span class="social-share">
         Share:
 
-        <a target="_blank" title="LinkedIn" href="//www.linkedin.com/shareArticle?url={{ site.domain }}{{ page.url }}&title={{ page.title }}&summary={{ page.content | truncatewords: 100 }}">
+        <a target="_blank" title="LinkedIn" href="//www.linkedin.com/shareArticle?url={{ site.domain }}{{ page.url }}&title={{ page.title | escape }}&summary={{ page.excerpt | strip_html | escape }}">
             <i class="fa fa-linkedin-square fa-2x"></i>
         </a>
 
-        <a target="_blank" title="Twitter" href="//twitter.com/intent/tweet?url={{ site.domain }}{{ page.url }}&text={{ page.title }} @{{site.twitter_user}}">
+        <a target="_blank" title="Twitter" href="//twitter.com/intent/tweet?url={{ site.domain }}{{ page.url }}&text={{ page.title | escape}} @{{site.twitter_user}}">
             <i class="fa fa-twitter-square fa-2x"></i>
         </a>
 
@@ -14,7 +14,7 @@
             <i class="fa fa-google-plus-square fa-2x"></i>
         </a>
 
-        <a target="_blank" title="Reddit" href="//www.reddit.com/submit?url={{ site.domain }}{{ page.url }}&title={{ page.title }}">
+        <a target="_blank" title="Reddit" href="//www.reddit.com/submit?url={{ site.domain }}{{ page.url }}&title={{ page.title | escape}}">
             <i class="fa fa-reddit-square fa-2x"></i>
         </a>
 
