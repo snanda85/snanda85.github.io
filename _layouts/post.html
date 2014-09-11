@@ -1,16 +1,18 @@
 ---
 layout: page_with_sidebar
+sidebar: post.html
+itemtype: BlogPosting
 ---
 
 <article>
     {% unless page.categories contains "quotes" %}
-        <h1 class="title">
+        <h1 itemprop="headline" class="title">
             {{ page.title }}
         </h1>
     {% endunless %}
 
     {% if page.subtitle %}
-        <p class="subtitle">
+        <p itemprop="alternativeHeadline" class="subtitle">
             <span>{{ page.subtitle }}</span>
         </p>
     {% endif %}
@@ -25,20 +27,20 @@ layout: page_with_sidebar
         </span>
 
         <span class="date">
-          {{ page.date | date: "%B %d, %Y" }}
+            <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
         </span>
     </p>
 
     {% if page.categories contains "quotes" %}
         {% include quote.html %}
     {% else %}
-        <div class="post">{{ content }}</div>
+        <div itemprop="text" class="post">{{ content }}</div>
     {% endif %}
 
 
     <p class="subtitle">
         {% if page.tags and page.tags.size > 0 %}
-        <span class="tags">
+        <span itemprop="keywords" class="tags">
             Tags:
             {% for tag in page.tags %}
                 <a href="/">{{ tag | capitalize }}</a>

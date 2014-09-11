@@ -1,0 +1,9 @@
+{% if page.sidebar %}
+    {% capture sidebar %}sidebars/{{page.sidebar}}{% endcapture %}
+{% elsif site.default_sidebar %}
+    {% capture sidebar %}sidebars/{{site.default_sidebar}}{% endcapture %}
+{% else %}
+    {% assign sidebar = 'sidebars/default.html' %}
+{% endif %}
+
+{% include {{sidebar}} %}

@@ -38,17 +38,17 @@ I am using Django 1.4, but the below code should work fine with 1.3 too.
 ###The 'Contact' Model
 Create a model class for each contact. This will reside in contacts/models.py.
 
-    ``` Python
-    # contacts/models.py
-    from django.db import models
-    class Contact(models.Model):
-        name = models.CharField(max_length=512)
-        phone = models.CharField(max_length=512)
-        email = models.EmailField(max_length=1024)
+``` Python
+# contacts/models.py
+from django.db import models
+class Contact(models.Model):
+    name = models.CharField(max_length=512)
+    phone = models.CharField(max_length=512)
+    email = models.EmailField(max_length=1024)
 
-        def unicode(self):
-            return self.name
-    ```
+    def unicode(self):
+        return self.name
+```
 
 Nothing fancy here. This is just a normal django model with three fields to store information about a contact. After creating the model, we need to create the database tables by executing: `python manage.py syncdb`
 
@@ -56,46 +56,46 @@ Nothing fancy here. This is just a normal django model with three fields to stor
 
 Create a tastypie resource class to expose the above contact model. This will reside in contacts/api.py
 
-    ``` Python
-    # contacts/api.py
-    from tastypie.resources import ModelResource
-    from tastypie.authorization import Authorization
-    from contacts.models import Contact
+``` Python
+# contacts/api.py
+from tastypie.resources import ModelResource
+from tastypie.authorization import Authorization
+from contacts.models import Contact
 
-    class ContactResource(ModelResource):
-        class Meta:
-            queryset = Contact.objects.all()
-            resource_name = ‘contact’
-            authorization= Authorization()
-    ```
+class ContactResource(ModelResource):
+    class Meta:
+        queryset = Contact.objects.all()
+        resource_name = 'contact'
+        authorization= Authorization()
+```
 
 The last line in the above code makes this resource to have world writeable permissions. This is NOT a good practice for an API to be exposed over internet. But it is good enough for us in a development environment.
 
 ###Hooking the API resource in the URLconf
 
-    ``` Python
-    # contacts/urls.py
-    from django.conf.urls.defaults import *
-    from tastypie.api import Api 
-    from contacts.api import ContactResource
+``` Python
+# contacts/urls.py
+from django.conf.urls.defaults import *
+from tastypie.api import Api 
+from contacts.api import ContactResource
 
-    API_VERSION = "v1"
-    api = Api(api_name=API_VERSION)
-    api.register(ContactResource())
+API_VERSION = "v1"
+api = Api(api_name=API_VERSION)
+api.register(ContactResource())
 
-    urlpatterns = patterns("",
-        (r'^', include(api.urls)),
-    )
-    ```
+urlpatterns = patterns("",
+    (r'^', include(api.urls)),
+)
+```
 
 Add the below lines at the end of the root urls.py:
 
-    ``` Python
-    # ember_django/urls.py
-    urlpatterns += patterns("",
-        url(r'^api/', include('contacts.urls')),
-    )
-    ```
+``` Python
+# ember_django/urls.py
+urlpatterns += patterns("",
+    url(r'^api/', include('contacts.urls')),
+)
+```
 
 Now, do a `syncdb`, fire up the django dev sever, and Voila!! We have a working API interface to the Contact model.
 To verify, try out the urls http://127.0.0.1:8000/api/v1/contact/schema/?format=json and http://127.0.0.1:8000/api/v1/contact/?format=json

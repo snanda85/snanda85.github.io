@@ -24,7 +24,12 @@
   {% endif %}
 </head>
 <body>
-    <div class="main">
+    {% if page.itemtype %}
+        {% assign itemtype = page.itemtype %}
+    {% else %}
+        {% assign itemtype = "WebPage" %}
+    {% endif %}
+    <div itemscope itemtype="http://schema.org/{{ itemtype }}" class="main">
         {% include header.html %}
 
         {{ content }}
