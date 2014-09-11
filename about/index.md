@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-skip_related: true
+itemtype: AboutPage
 ---
 
 Hi. I'm Sandeep Nanda
@@ -21,5 +21,5 @@ I'm a fan of Game of Thrones, and hope that Tyrion Lannister gets to sit on the 
 
 You can tweet at [`@{{ site.twitter_user }}`][twitter] or drop me a note at [`contact@sandeepnanda.com`][email]
 
-[email]: contact@sandeepnanda.com
+[email]: mailto:contact@sandeepnanda.com
 [twitter]: https://twitter.com/{{ site.twitter_user }}
