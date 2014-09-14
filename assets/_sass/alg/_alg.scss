@@ -110,7 +110,7 @@ header {
         background-color: $base-background-color;
         border-right: 1px solid $sidebar-border;
         @include span-columns(9);
-        min-height: 750px;
+        min-height: 850px;
         // Hide sidebar in smaller screens
         @include media($small-screen) {
             @include span-columns(12);
@@ -137,6 +137,9 @@ header {
         border-right: none;
         border-bottom: none;
         padding-bottom: 1em;
+        h2 {
+            border-bottom: 0px;
+        }
     }
 
     .category {
@@ -176,7 +179,10 @@ article {
     font-weight: 400;
     line-height: 1.4em;
     margin-top: .5em;
-    margin-bottom: .1em;
+    margin-bottom: .5em;
+    //border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 1px 0 #eee;
 
     @include media($medium-screen) {
       font-size: 1.4em;
@@ -219,6 +225,7 @@ article {
     margin-bottom: 1em;
 
     ul, ol, p {
+        // No relative font size for nested lists
         font-size: 1em;
     }
 
@@ -238,7 +245,18 @@ article {
 
   ol, ul {
     margin: 0.5em 0 1em 2em;
-    //list-style: disc;
+
+    // Less margin for nested lists
+    ul, ol {
+        margin: 0.4em 2em;
+    }
+    p {
+        margin-bottom: 0.4em;
+    }
+  }
+
+  ul {
+    list-style: disc;
   }
   
   pre code {
@@ -351,6 +369,7 @@ footer {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 5px #ccc;
+    max-width: 98%;
   }
 }
 

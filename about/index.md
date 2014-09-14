@@ -6,10 +6,10 @@ itemtype: AboutPage
 
 Hi. I'm Sandeep Nanda
 
-I am a programmer by profession, and have a fair share of python experience.
+I am a programmer by profession, and have a fair share of experience with testing as well.
 I do a little bit of everything, but I'm happiest working with Python (with/without Django)
 
-I like to eat exotic stuff, although there are very less chances of getting it.
+Whenever I can, I like to eat exotic stuff.
 
 ---
 
@@ -19,7 +19,7 @@ I'm a fan of Game of Thrones, and hope that Tyrion Lannister gets to sit on the 
 
 ## Get in touch
 
-You can tweet at [`@{{ site.twitter_user }}`][twitter] or drop me a note at [`contact@sandeepnanda.com`][email]
+You can tweet at [@{{ site.twitter_user }}][twitter] or drop me a note at [{{site.email}}][email]
 
-[email]: mailto:contact@sandeepnanda.com
+[email]: mailto:{{site.email}}
 [twitter]: https://twitter.com/{{ site.twitter_user }}

@@ -16,6 +16,7 @@
     {% endif %}
     
     <meta name="description" content="{{ description }}" />
+    <meta name="keywords" content="{{ page.seo_keywords }}" />
   
     <link rel="canonical" href="{{site.domain}}{{ page.url | replace:'index.html', '' }}" />
 
@@ -44,12 +45,8 @@
         {% include footer.html %}
     </div>
 
-
-  {% include disqus.html %}
   {% if site.github %}
     {% include analytics.html %}
   {% endif %}
-
-  {% include ads.html %}
 </body>
 </html>

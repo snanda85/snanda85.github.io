@@ -4,7 +4,7 @@ author: Sandeep Nanda
 email: contact@sandeepnanda.com
 description: This is where I keep notes of my encounters with the world, professional and personal
 static_url: /assets/
-domain: http://sandeepnanda.com
+domain: sandeepnanda.com
 
 sass:
     sass_dir: assets/_sass
@@ -19,6 +19,7 @@ defaults:
       layout: "post"
       comments: true
       sharing: true
+      ads: true
   -
     scope:
       path: "technology"
@@ -85,7 +86,7 @@ disqus_short_name: snanda85
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id: UA-54329779-1
+google_analytics_tracking_id: "UA-54329779-1"
 
 # Facebook Like
 facebook_like: true
