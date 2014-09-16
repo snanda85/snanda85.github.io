@@ -14,15 +14,13 @@
 
 <div class="quote">
     <blockquote itemprop="text">
-        {{ content }}
-        <footer>
-            <strong>- 
-                {% if author == site.author %}
-                    <a href="/">{{ author }}</a>
-                {% else %}
-                    {{ author }}
-                {% endif %}
-            </strong>
-        </footer>
+        {% if author == site.author %}
+            <a href="http://{{ site.domain}}{{ page.url }}">{{ content }}</a>
+        {% else %}
+            {{ content }}
+            <footer>
+                <strong>- {{ author }}</strong>
+            </footer>
+        {% endif %}
     </blockquote>
 </div>

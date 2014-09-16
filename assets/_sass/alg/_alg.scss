@@ -110,7 +110,7 @@ header {
         background-color: $base-background-color;
         border-right: 1px solid $sidebar-border;
         @include span-columns(9);
-        min-height: 850px;
+        min-height: 950px;
         // Hide sidebar in smaller screens
         @include media($small-screen) {
             @include span-columns(12);
@@ -180,9 +180,7 @@ article {
     line-height: 1.4em;
     margin-top: .5em;
     margin-bottom: .5em;
-    //border-bottom: 1px solid #eee;
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 1px 0 #eee;
+    border-bottom: 1px solid #eee;
 
     @include media($medium-screen) {
       font-size: 1.4em;
@@ -294,6 +292,10 @@ article {
     border-color: $accent-secondary;
     font-style: italic;
     padding: $base-line-height / 2;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
 
     footer {
         font-size: 0.7em;

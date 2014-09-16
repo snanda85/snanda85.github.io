@@ -26,12 +26,12 @@
       font-family: $sidebar-heading-font;
       font-size: 1.5em;
       font-weight: normal;
-      margin: 1.5em 0 0;
+      margin: 0.5em 0 0;
       padding-bottom: .2em;
       border-bottom: 1px solid $sidebar-border;
       @extend .side-shadow-border;
       + p {
-        padding-top: .4em;
+        padding-top: .5em;
       }
     }
   }

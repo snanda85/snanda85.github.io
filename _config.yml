@@ -20,24 +20,13 @@ defaults:
       comments: true
       sharing: true
       ads: true
+      sidebar: "post.html"
   -
     scope:
-      path: "technology"
+      path: "posts/quotes"
       type: "post" # previously `post` in Jekyll 2.2.
     values:
-      categories: "technology"
-  -
-    scope:
-      path: "quotes"
-      type: "post" # previously `post` in Jekyll 2.2.
-    values:
-      categories: "quotes"
-  -
-    scope:
-      path: "travel"
-      type: "post" # previously `post` in Jekyll 2.2.
-    values:
-      categories: "travel"
+      sidebar: "quote.html"
 
 enable_sharing: true
 lsi: false

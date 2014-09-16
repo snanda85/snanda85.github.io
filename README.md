@@ -9,7 +9,10 @@ Spelling/grammar corrections are always welcome (and much appreciated :heart:) v
 ### License
 The following directories and their contents are Copyright Sandeep Nanda. You may not reuse anything therein without my permission:
 
-- \_posts/
+- posts/
 - assets/images
+
+All quotes unless otherwise attributed to someone else, are copyright Sandeep Nanda.
+You may freely use the quotes in your works as long as a link to http://sandeepnanda.com is present in the attribution.
 
 All other directories and files are MIT Licensed.

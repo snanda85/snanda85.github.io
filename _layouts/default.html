@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} - Sandeep Nanda</title>
+    <title>{{ page.title }}</title>
     <meta name="author" content="{{ site.author }}" />
 
     {% if page.title or page.subtitle %}
@@ -18,12 +18,12 @@
     <meta name="description" content="{{ description }}" />
     <meta name="keywords" content="{{ page.seo_keywords }}" />
   
-    <link rel="canonical" href="{{site.domain}}{{ page.url | replace:'index.html', '' }}" />
+    <link rel="canonical" href="http://{{site.domain}}{{ page.url | replace:'index.html', '' }}" />
 
     <link href="//fonts.googleapis.com/css?family=Nunito:400,700,300|Varela+Round|Quicksand" rel="stylesheet" type="text/css">
 
     <link rel="shortcut icon" href="{{ site.static_url }}images/favicon.png">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.domain }}/atom.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="http://{{ site.domain }}/atom.xml" />
 
     {% if site.github %}
         <link rel="stylesheet" href="{{ site.static_url }}css/site.css?sha={{ site.github.build_revision }}">

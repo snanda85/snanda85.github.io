@@ -1,1 +1,6 @@
-<a href="/blog/series/{{ category }}">{{ category | capitalize }}</a>
+{% comment %}Add a link only if the category is present in a series{%endcomment%}
+{% for series in site.data.series %}
+    {% if category == series.category %}
+        <a href="/blog/series/{{ category }}">{{ category | capitalize }}</a>
+    {% endif %}
+{% endfor %}
