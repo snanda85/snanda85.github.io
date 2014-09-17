@@ -13,9 +13,11 @@
     {% endif %}
     </p>
     {% if post.categories contains "quotes" %}
+        <!--
         <h1 class="title">
             <a href="{{ post.url }}" title="{{post.title}}">{{ post.title | truncatewords: 5 }}</a>
         </h1>
+        -->
         {% include quote.html %}
     {% else %}
         <h1 class="title">

@@ -12,15 +12,19 @@
     {% assign author = "Anonymous" %}
 {% endif %}
 
+{% if post.url %}
+    {% assign url = post.url %}
+{% elsif page.url %}
+    {% assign url = page.url %}
+{% endif %}
+
 <div class="quote">
     <blockquote itemprop="text">
-        {% if author == site.author %}
-            <a href="http://{{ site.domain}}{{ page.url }}">{{ content }}</a>
-        {% else %}
-            {{ content }}
+        <a href="http://{{ site.domain}}{{ url }}">&ldquo; {{ content | remove: '<p>' | remove: '</p>' }} &rdquo;</a>
+        {% unless author == site.author %}
             <footer>
                 <strong>- {{ author }}</strong>
             </footer>
-        {% endif %}
+        {% endunless %}
     </blockquote>
 </div>

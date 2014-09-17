@@ -94,6 +94,7 @@ header {
             float: none;
             margin: 0 auto;
             max-width: 700px;
+            min-height: 520px;
         }
     }
 }
@@ -300,18 +301,21 @@ article {
 
 .quote {
   blockquote {
-    font-size: 1.6em;
+    font-size: 1.8em;
     border-color: $accent-secondary;
     font-style: italic;
     padding: $base-line-height / 2;
+    font-family: Quicksand, Sans-Serif;
+    //line-height: 48px;
 
     p:last-child {
         margin-bottom: 0;
     }
 
     footer {
-        font-size: 0.7em;
+        font-size: 0.6em;
         padding-bottom: 0;
+        margin-top: 1em;
     }
     a {
         color: inherit;
