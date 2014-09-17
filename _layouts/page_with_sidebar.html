@@ -1,15 +1,6 @@
 ---
-layout: default
+layout: content_with_sidebar
+sidebar: page.html
 ---
-<div class="content-with-sidebar">
-    <div class="inner-container">
-        <section>
-            <div class="main-pane">
-                {{ content }}
-            </div>
-            <aside class="sidebar">
-                {% include sidebar.html %}
-            </aside>
-        </section>
-    </div>
-</div>
+{% comment %}Default pages are with sidebars{% endcomment %}
+{% include page.html %}

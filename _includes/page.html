@@ -1,0 +1,11 @@
+<article>
+    <div class="pagetitle">
+        <h1 itemprop="headline">{{ page.title }}</h1>
+
+        {% if page.subtitle %}
+            <p itemprop="alternativeHeadline" class="subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+    </div>
+
+    <div itemprop="text" class="page">{{ content }}</div>
+</article>

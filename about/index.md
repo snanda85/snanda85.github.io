@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: page_without_sidebar
 title: About
+subtitle: Nothing fancy
 itemtype: AboutPage
 ---
 
@@ -17,7 +18,7 @@ I'm a fan of Game of Thrones, and hope that Tyrion Lannister gets to sit on the 
 
 ---
 
-## Get in touch
+##Get in touch
 
 You can tweet at [@{{ site.twitter_user }}][twitter] or drop me a note at [{{site.email}}][email]
 

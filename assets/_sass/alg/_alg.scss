@@ -70,24 +70,32 @@ header {
 }
 
 .main {
-  @include outer-container;
+    @include outer-container;
 
-  //width: 720px;
-  margin: 10px auto;
-  padding-top: 10px;
+    //width: 720px;
+    margin: 10px auto;
+    padding-top: 10px;
 
-  @include media(min-width 680px max-width 760px) {
-    //width: 680px;
-  }
+    @include media(min-width 680px max-width 760px) {
+        //width: 680px;
+    }
 
-  @include media(min-width 500px max-width 680px) {
-    //width: 520px;
-  }
+    @include media(min-width 500px max-width 680px) {
+        //width: 520px;
+    }
 
-  @include media(max-width 500px) {
-    //width: 300px;
-  }
+    @include media(max-width 500px) {
+        //width: 300px;
+    }
 
+    .content-without-sidebar {
+        @extend .content;
+        .inner-container {
+            float: none;
+            margin: 0 auto;
+            max-width: 700px;
+        }
+    }
 }
 
 .content {
@@ -283,6 +291,10 @@ article {
 
   .post {
     margin-top: .5em;
+  }
+
+  .page h2 {
+    border-bottom: none;
   }
 }
 
