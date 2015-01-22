@@ -253,8 +253,8 @@ th {
     border: 1px solid #ddd !important; } }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("/static/fonts/glyphicons-halflings-regular.eot");
-  src: url("/static/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/static/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/static/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/static/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 .glyphicon {
   position: relative;
   top: 1px;
@@ -5407,6 +5407,122 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/* Non-responsive overrides
+ *
+ * Utilitze the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+/* Reset the container */
+.non-responsive {
+  /* Always float the navbar header */
+  /* Undo the collapsing navbar */
+  /* Always apply the floated nav */
+  /* Redeclare since we override the float above */
+  /* Undo custom dropdowns */
+  /* Undo form expansion */
+  /* Copy-pasted from forms.less since we mixin the .form-inline styles. */ }
+  .non-responsive .container {
+    width: 970px;
+    max-width: none !important; }
+  .non-responsive .navbar {
+    margin-bottom: 20px; }
+  .non-responsive .container .navbar-header,
+  .non-responsive .container .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0; }
+  .non-responsive .navbar-header {
+    float: left; }
+  .non-responsive .navbar-collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+    visibility: visible !important; }
+  .non-responsive .navbar-toggle {
+    display: none; }
+  .non-responsive .navbar-collapse {
+    border-top: 0; }
+  .non-responsive .navbar-brand {
+    margin-left: -15px; }
+  .non-responsive .navbar-nav {
+    float: left;
+    margin: 0; }
+  .non-responsive .navbar-nav > li {
+    float: left; }
+  .non-responsive .navbar-nav.navbar-right {
+    float: right; }
+  .non-responsive .navbar .navbar-nav .open .dropdown-menu {
+    position: absolute;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-width: 0 1px 1px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+  .non-responsive .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #333; }
+  .non-responsive .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+  .non-responsive .navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+  .non-responsive .navbar .navbar-nav .open .dropdown-menu > .active > a,
+  .non-responsive .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .non-responsive .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff !important;
+    background-color: #428bca !important; }
+  .non-responsive .navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+  .non-responsive .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .non-responsive .navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #999 !important;
+    background-color: transparent !important; }
+  .non-responsive .navbar-form {
+    float: left;
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .non-responsive .navbar-form .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .non-responsive .navbar-form .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle; }
+  .non-responsive .navbar-form .form-control-static {
+    display: inline-block; }
+  .non-responsive .navbar-form .input-group {
+    display: inline-table;
+    vertical-align: middle; }
+  .non-responsive .navbar-form .input-group .input-group-addon,
+  .non-responsive .navbar-form .input-group .input-group-btn,
+  .non-responsive .navbar-form .input-group .form-control {
+    width: auto; }
+  .non-responsive .navbar-form .input-group > .form-control {
+    width: 100%; }
+  .non-responsive .navbar-form .control-label {
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .non-responsive .navbar-form .radio,
+  .non-responsive .navbar-form .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .non-responsive .navbar-form .radio label,
+  .non-responsive .navbar-form .checkbox label {
+    padding-left: 0; }
+  .non-responsive .navbar-form .radio input[type="radio"],
+  .non-responsive .navbar-form .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0; }
+  .non-responsive .navbar-form .has-feedback .form-control-feedback {
+    top: 0; }
+
 hr {
   width: 50%; }
 
@@ -5604,5 +5720,38 @@ section {
     text-align: left;
     /* inline-block space fix */
     margin-right: -4px; }
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px;
+  /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px; }
+  .nav-sidebar .nav-header {
+    background-color: #374d58;
+    color: #FFF;
+    padding: 10px 20px; }
+
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px; }
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff; }
+
+.content-header {
+  background-color: #374d58;
+  color: #FFF;
+  padding: 10px 20px;
+  margin-bottom: 20px; }
+
+.content-section {
+  margin-bottom: 20px; }
+
+table th {
+  background-color: #374d58;
+  color: #FFF; }
 
 /*# sourceMappingURL=app.css.map */
