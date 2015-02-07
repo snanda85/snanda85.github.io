@@ -13,8 +13,8 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-    <link href="css/app.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -29,7 +29,7 @@
   <body class="non-responsive">
 
     <!-- Static navbar -->
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <nav class="navbar navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -38,11 +38,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Pionira</a>
+          <a class="navbar-brand" href="/"><img src='images/logo.png'/></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="/">Home</a></li>
             <li><a href="#products">Products</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About Us</a></li>
@@ -53,102 +53,105 @@
     </nav>
 
     <div id="hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="headline">
-                        <h1>Pionira</h1>
-                        <h3>Where Innovations are seeded</h3>
-                    </div>
-                    <div class="buttons">
-                        <p>
-                            <a class="btn btn-lg btn-ghost" href="#services" role="button">Know More</a>
-                        </p>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="headline">
+                    <H1>Pionira Solutions</H1>
+                    <h3>Where Innovations are seeded</h3>
                 </div>
-            </div> <!--row-->
-        </div> <!--container-->
-    </div>
-
-    <!-- Services Section -->
-    <section id="products">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h2 class="section-heading">Products</h2>
-                    <h3 class="section-subheading text-muted">Products for enterprises</h3>
+                <div class="buttons">
+                    <p>
+                        <a class="btn btn-lg btn-ghost" href="#services" role="button">Know More</a>
+                    </p>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-xs-4">
-                <a href="pharos.html">
+        </div> <!--row-->
+    </div> <!--container-->
+</div>
+
+<!-- Services Section -->
+<section id="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 class="section-heading">Products</h2>
+                <h3 class="section-subheading text-muted">Products for enterprises</h3>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-xs-4">
+            <a href="/pharos.html">
+                <span class="fa-stack fa-5x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-print fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Pharos</h4>
+                <p class="text-muted">Comprehensive print/copy tracking and accounting to the user level</p>
+            </a>
+            </div>
+            <div class="col-xs-4">
+                <span class="fa-stack fa-5x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Safecom</h4>
+                <p class="text-muted">Safeguards document confidentiality and unauthorized access to print, scan, copy and e-mail functions</p>
+            </div>
+            <div class="col-xs-4">
+                <a href="/nuance.html">
                     <span class="fa-stack fa-5x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Pharos</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur faucibus maximus.</p>
-                </a>
-                </div>
-                <div class="col-xs-4">
-                    <span class="fa-stack fa-5x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Safecom</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur faucibus.</p>
-                </div>
-                <div class="col-xs-4">
-                    <span class="fa-stack fa-5x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Nuance</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur.</p>
-                </div>
+                    <p class="text-muted">Deploy cloud-based printing, I-Queue, or a hybrid model with the convenience of a single print management application</p>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <hr/>
+<hr/>
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Next generation marketing services</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-xs-4">
-                    <span class="fa-stack fa-5x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">SMS</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur faucibus maximus.</p>
-                </div>
-                <div class="col-xs-4">
-                    <span class="fa-stack fa-5x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Voice</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur faucibus.</p>
-                </div>
-                <div class="col-xs-4">
-                    <span class="fa-stack fa-5x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Email</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur.</p>
-                </div>
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 class="section-heading">Services</h2>
+                <h3 class="section-subheading text-muted">Next generation marketing services</h3>
             </div>
         </div>
-    </section>
+        <div class="row text-center">
+            <div class="col-xs-4">
+                <span class="fa-stack fa-5x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">SMS</h4>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur faucibus maximus.</p>
+            </div>
+            <div class="col-xs-4">
+                <span class="fa-stack fa-5x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Voice</h4>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur faucibus.</p>
+            </div>
+            <div class="col-xs-4">
+                <span class="fa-stack fa-5x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Email</h4>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <footer id="page-footer">
         <div class="container">
