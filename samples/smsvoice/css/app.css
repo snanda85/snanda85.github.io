@@ -5424,8 +5424,6 @@ button.close {
   .non-responsive .container {
     width: 970px;
     max-width: none !important; }
-  .non-responsive .navbar {
-    margin-bottom: 20px; }
   .non-responsive .container .navbar-header,
   .non-responsive .container .navbar-collapse {
     margin-right: 0;
@@ -5637,6 +5635,8 @@ section {
     font-style: italic;
     font-weight: 400;
     margin-bottom: 50px; }
+  section a:hover, section a:focus {
+    text-decoration: none; }
 
 /* Footer */
 #page-footer {
@@ -5753,5 +5753,26 @@ section {
 table th {
   background-color: #374d58;
   color: #FFF; }
+
+.navbar-brand > img {
+  width: 130px;
+  margin-top: -20px; }
+
+.article-content {
+  padding-top: 30px; }
+  .article-content H1 {
+    margin-top: 0px;
+    text-align: center; }
+  .article-content li {
+    line-height: 1.4;
+    margin-bottom: 5px; }
+
+.aboutus td {
+  padding: 5px; }
+
+.contactus table {
+  margin-top: 30px; }
+.contactus td {
+  padding: 10px 5px; }
 
 /*# sourceMappingURL=app.css.map */
