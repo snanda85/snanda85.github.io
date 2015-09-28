@@ -22,13 +22,16 @@ So, why not use the most reliable email hosting provider for free? **GMail**. Ye
 This step will make the gmail account to recieve the emails sent to your custom email address.
 I am taking an example of Godaddy. The steps might be a little different for other domain providers, but the general idea is same.
 
-1. Sign in to GoDaddy account &rarr; Click "My Account" &rarr; Email &rarr; Launch
-2. This will bring you to the Email settings. Click on 'Create Forward'
+1. Sign in to GoDaddy account &rarr; Webspace login &rarr; SetUp
+    {% include post/image.html src="free-email-7.png" alt="Setup Email forwarding for the domain" %}
+    In the popup dialog, select your domain name and click Submit
+2. Click "My Account" &rarr; Email &rarr; Launch
+3. This will bring you to the Email settings. Click on 'Create Forward'
     {% include post/image.html src="free-email-4.png" alt="Go to Email forwarding setup" %}
-3. Enter your custom address in "Forward this email address", and gmail id in "To these email addresses"
+4. Enter your custom address in "Forward this email address", and gmail id in "To these email addresses"
     {% include post/image.html src="free-email-5.png" alt="Configure the email forwarding" %}
-4. Click "Create", and wait for a few minutes for the setup to complete
-5. Ask a friend to send you a test mail and confirm that you are able to recieve the email in your gmail inbox
+5. Click "Create", and wait for a few minutes for the setup to complete
+6. Ask a friend to send you a test mail and confirm that you are able to recieve the email in your gmail inbox
 
 **Note**: While testing the email delivery, please use a different email address to send out the test mail. Mails sent from the recipient account (i.e. your gmail account) will most likely fail.
 
