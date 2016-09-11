@@ -9,6 +9,7 @@ tags:
 - ubuntu
 - cdh
 tumblr_url: http://sandeep-n.tumblr.com/post/41451162984/hadoop-installation-on-ubuntu-cheatsheet
+crosspost_to_medium: true
 ---
 I had tried installing various versions of hadoop manually on my ubuntu box, but every try ended up in a mess.
 

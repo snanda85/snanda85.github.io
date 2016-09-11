@@ -22,7 +22,7 @@ So, why not use the most reliable email hosting provider for free? **GMail**. Ye
 This step will make the gmail account to recieve the emails sent to your custom email address.
 I am taking an example of Godaddy. The steps might be a little different for other domain providers, but the general idea is same.
 
-1. Sign in to GoDaddy account &rarr; Webspace login &rarr; SetUp
+1. Sign in to GoDaddy account &rarr; Workspace Email &rarr; Click on Set Up
     {% include post/image.html src="free-email-7.png" alt="Setup Email forwarding for the domain" %}
     In the popup dialog, select your domain name and click Submit
 2. Click "My Account" &rarr; Email &rarr; Launch

@@ -24,8 +24,8 @@ itemtype: BlogPosting
         {% endif %}
         </span>
 
-        <span class="date">
-            <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+        <span class="date postmetadata">
+            <time itemprop="datePublished" class="updated" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
         </span>
         <br style="clear:both"/>
     </p>

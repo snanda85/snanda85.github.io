@@ -5,6 +5,7 @@ email: contact@sandeepnanda.com
 description: This is where I keep notes of my encounters with the world, professional and personal
 static_url: /assets/
 domain: sandeepnanda.com
+url: http://sandeepnanda.com
 
 sass:
     sass_dir: assets/_sass
@@ -40,6 +41,8 @@ permalink: /blog/:title/
 exclude: ["CNAME", "README.md", "Rakefile", "generate.rb", "Gemfile", "Gemfile.lock"]
 gems:
   - jekyll-sitemap
+  - jekyll-crosspost-to-medium
+  - jekyll-paginate
 excerpt_separator: '<!--more-->'
 recent_posts: 8
 
@@ -82,3 +85,10 @@ facebook_like: true
 
 #stackoverflow_user: 956362
 infolinks_pid: 2189848
+
+jekyll-crosspost_to_medium:
+  enabled: true
+  cache: .jekyll-crosspost_to_medium
+  status: unlisted
+  text: "<p><i>Originally posted on <a href='{{ url }}' rel='canonical'>my blog</a>.</i></p>"
+  backdate: true
